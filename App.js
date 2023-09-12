@@ -7,8 +7,8 @@ export default function App() {
   console.log("Hello World")
   const message = 'hello world'
   return (
-    <SafeAreaView>
-      <View style={ {backgroundColor: 'pink'} }>
+    <SafeAreaView style={styles.wrapper}>
+      <View style={ styles.container }>
         <Text>{message}</Text>
         <StatusBar style="auto" />
       </View>
@@ -17,10 +17,13 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  container: {
+  wrapper: {
     flex: 1,
-    backgroundColor: '#fff',
+  },
+  container: {
+    backgroundColor: 'pink',
+    flex: 1,
     alignItems: 'center',
-    justifyContent: 'center',
+    
   },
 });
